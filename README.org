@@ -1,0 +1,5 @@
+* Fractal Images
+Simple prototypes for generating fractal images
+
+#+CAPTION: Simple representation of Mandelbrot Set
+[[file:simple_mandlebrot.png]]
