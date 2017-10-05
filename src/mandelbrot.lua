@@ -4,6 +4,7 @@
 
 mb = {}
 
+-- Simple check for image generation
 function mb.generate_random(filename)
    print("Generating a random image.")
    local width = 256
@@ -36,6 +37,11 @@ local function divergence_level(f)
 
       This function might be the funnel point for this whole program.
       I'll have to check this calculation in C.
+
+      I need to differentiate b/w
+      completely diverges(blue),
+      about to diverge(gray)
+      and converges(black)
    --]]
    local max_val = 4
    local max_iteration = 1000
@@ -75,3 +81,5 @@ function mb.generate(filename, height)
    end
    fh:close()
 end
+
+
