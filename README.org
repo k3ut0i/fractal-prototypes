@@ -1,15 +1,15 @@
 * Fractal Images
-Simple prototypes for generating fractal images
+Simple prototypes for generating fractal images. These might not be efficient ways for computing the required data.
 ** Mandelbrot
 *** Simple representation of the set
  #+CAPTION: Simple representation of Mandelbrot Set
  [[file:images/simple_mandlebrot.png]]
 
-*** TODO Generating a better colored version
+*** Generating a better colored version
 
-*** TODO Generating the image in a specific vicinity
+*** Generating the image in a specific vicinity
 
-** TODO Julia
+** Julia
 Plotting a Julia set is quite complicated compared to it's Mandelbrot version. 
 
 ** Lindenmayer Systems

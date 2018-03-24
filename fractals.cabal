@@ -1,0 +1,28 @@
+name: fractals
+version: 0.0.1
+license: MIT
+cabal-version: >= 1.8
+author: keutoi
+build-type: Simple
+                                            
+library
+        hs-source-dirs: src
+        build-depends: base
+                     , array
+        exposed-modules: Mandelbrot
+                       , ImageUtils
+
+test-suite tests
+           type: exitcode-stdio-1.0
+           hs-source-dirs: test
+           main-is: TestFractals.hs
+           build-depends: base
+                        , QuickCheck
+                        , fractals
+
+executable generate-sample-images
+           main-is: generate_sample_images.hs
+           hs-source-dirs: sample_generators
+           build-depends: base
+                        , QuickCheck
+                        , fractals
